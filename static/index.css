@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: 13% auto;
+    background: pink;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.main input,
+.main button {
+    display: block;
+    margin: 20px auto;
+}
+
+.main button {
+    padding: 7px;
+    cursor: pointer;
+}
+
+.main input {
+    width: 60%;
+    height: 55px;
+    padding-left: 42px;
+    outline: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.main .myinp {
+    position: absolute;
+    top: 33%;
+    left: 22%;
+}
+
+.main .mypas {
+    position: absolute;
+    top: 58%;
+    left: 22%;
+}
+
+.container .btnsholder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.container .btnsholder button {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid gray;
+    color: black;
+    text-align: center;
+}
+
+.main label {
+    cursor: pointer;
+}
+
+.submain {
+    display: none;
+}
+
+.submain input,
+.submain button {
+    display: block;
+    margin: 20px auto;
+}
+
+.submain button {
+    padding: 7px;
+    cursor: pointer;
+}
+
+.submain input {
+    width: 60%;
+    height: 55px;
+    padding-left: 45px;
+    outline: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.submain .myinp {
+    position: absolute;
+    top: 18.5%;
+    left: 22%;
+}
+
+.submain .mypas {
+    position: absolute;
+    top: 33%;
+    left: 22%;
+}
+
+.submain .mypas1 {
+    position: absolute;
+    top: 47.5%;
+    left: 22%;
+}
+
+.submain .myenv {
+    position: absolute;
+    top: 62%;
+    left: 22%;
+}
+
+.submain .mymob {
+    position: absolute;
+    top: 76.5%;
+    left: 22%;
+}
+
+.submain span {
+    display: none;
+}
+
+#userlogshower-signup {
+    position: absolute;
+    top: 19%;
+    right: 22%;
+}
+
+span {
+    font-size: 20px;
+}
+
+#passlogshower-signup {
+    position: absolute;
+    top: 33.5%;
+    right: 22%;
+    cursor: pointer;
+}
+
+#passlogshower1 {
+    position: absolute;
+    top: 48%;
+    right: 22%;
+    cursor: pointer;
+}
+
+#emaillogshower {
+    position: absolute;
+    top: 62.5%;
+    right: 22%;
+    cursor: pointer;
+}
+
+#moblogshower {
+    position: absolute;
+    top: 77%;
+    right: 22%;
+    cursor: pointer;
+}
+
+#login {
+    background: gray;
+    pointer-events: none;
+}
+
+.mypas-login,
+.myinp-login {
+    position: absolute;
+    left: 22%;
+}
+
+.myinp-login {
+    top: 32%;
+}
+
+.mypas-login {
+    top: 58%;
+}
+
+.main span {
+    position: absolute;
+    cursor: pointer;
+}
+
+.main #userlogshower {
+    top: 33%;
+    right: 22%;
+}
+
+.main #passlogshower {
+    top: 59%;
+    right: 22%;
+}
+
+@media (max-width: 1300px) {
+    .container {
+        width: 60%;
+    }
+    .main input {
+        width: 70%;
+    }
+    .submain input {
+        width: 70%;
+    }
+    .submain .mypas,
+    .submain .mypas1,
+    .submain .myinp,
+    .submain .myenv,
+    .submain .mymob {
+        left: 18%;
+    }
+    #passlogshower-signup,
+    #moblogshower,
+    #userlogshower-signup,
+    #passlogshower1,
+    #emaillogshower,
+    .main #userlogshower,
+    .main #passlogshower {
+        right: 18%;
+    }
+    .myinp-login,
+    .mypas-login {
+        left: 17%;
+    }
+}
+
+@media (max-width:1000px) {
+    .container {
+        width: 70%;
+    }
+    .main input {
+        width: 80%;
+    }
+    .submain input {
+        width: 80%;
+    }
+    .submain .mypas,
+    .submain .mypas1,
+    .submain .myinp,
+    .submain .myenv,
+    .submain .mymob {
+        left: 13%;
+    }
+    #passlogshower-signup,
+    #moblogshower,
+    #userlogshower-signup,
+    #passlogshower1,
+    #emaillogshower,
+    .main #userlogshower,
+    .main #passlogshower {
+        right: 13%;
+    }
+    .myinp-login,
+    .mypas-login {
+        left: 12%;
+    }
+}
+
+@media (max-width:800px) {
+    .container {
+        width: 85%;
+    }
+    .main input {
+        width: 85%;
+    }
+    .submain input {
+        width: 85%;
+    }
+    .submain .mypas,
+    .submain .mypas1,
+    .submain .myinp,
+    .submain .myenv,
+    .submain .mymob {
+        left: 10%;
+    }
+    #passlogshower-signup,
+    #moblogshower,
+    #userlogshower-signup,
+    #passlogshower1,
+    #emaillogshower,
+    .main #userlogshower,
+    .main #passlogshower {
+        right: 10%;
+    }
+    .myinp-login,
+    .mypas-login {
+        left: 9.5%;
+    }
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 100%;
+    }
+    .main input {
+        width: 92%;
+    }
+    .submain input {
+        width: 92%;
+    }
+    .submain .mypas,
+    .submain .mypas1,
+    .submain .myinp,
+    .submain .myenv,
+    .submain .mymob {
+        left: 7%;
+    }
+    #passlogshower-signup,
+    #moblogshower,
+    #userlogshower-signup,
+    #passlogshower1,
+    #emaillogshower,
+    .main #userlogshower,
+    .main #passlogshower {
+        right: 7%;
+    }
+    .myinp-login,
+    .mypas-login {
+        left: 7%;
+    }
+    input {
+        padding-left: 30px;
+    }
+}

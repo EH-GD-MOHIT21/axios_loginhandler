@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Login Page</title>
+    <script src="https://kit.fontawesome.com/e8425439af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    {% for message in messages %}
+    <script>alert("{{message}}")</script>
+    {% endfor %}
+    <div class="container" id="container">
+        <div class="btnsholder">
+            <button type="button" id="signup">SignUp</button>
+            <button type="button" id="login">Login</button>
+        </div>
+
+        <!-- login up page -->
+        <form action="/loginuser" method='POST'>
+            <div class="main" id="main">
+                <label for="inputbox"><i class="fas fa-user personal myinp-login" style="font-size:24px"></i></label>
+                <input type="text" id="inputbox" name="username">
+                <span id="userlogshower"></span>
+                <label for="passwordbox"><i class="fas fa-lock inputlogo personal mypas-login" style='font-size:24px'></i></label>
+                <input type="password" id="passwordbox" name="password">
+                <span id="passlogshower"></span>
+                <button type="submit" id="mainbtn">Proceed</button>
+            </div>
+        </form>
+        <!-- sign up page -->
+        <form action="/savedetails" method="post">
+            <div class="submain" id="submain">
+
+                <label for="inputbox-signup"><i class="fas fa-user personal myinp" style="font-size:24px"></i></label>
+                <input type="text" id="inputbox-signup" name="username">
+                <span id="userlogshower-signup" style="cursor: pointer;"></span>
+
+                <label for="passwordbox-signup"><i class="fas fa-lock inputlogo personal mypas" style='font-size:24px'></i></label>
+                <input type="password" id="passwordbox-signup" name="password">
+                <span id="passlogshower-signup"></span>
+
+                <label for="passwordbox1"><i class="fas fa-lock inputlogo personal mypas1" style='font-size:24px'></i></label>
+                <input type="password" id="passwordbox1" name="repassword">
+                <span id="passlogshower1"></span>
+
+                <label for="emailbox"><i class="far fa-envelope myenv" style="font-size: 24px;"></i></label>
+                <input type="text" id="emailbox" name="email">
+                <span id="emaillogshower"></span>
+
+                <label for="mobilebox"><i class="fas fa-mobile-alt mymob" style="font-size: 24px;"></i></label>
+                <input type="text" id="mobilebox" name="mobile">
+                <span id="moblogshower"></span>
+
+                <button type="submit" id="mainbtn1">Proceed</button>
+
+            </div>
+        </form>
+
+    </div>
+
+
+</body>
+<script src="{% static 'index.js' %}"></script>
+
+</html>
