@@ -76,14 +76,25 @@ WSGI_APPLICATION = 'authhandler.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'mylogin',
+#         'HOST': 'db4free.net',
+#         'USER': 'mhtuiopac',
+#         'PASSWORD': 'hemantsharma',
+#         'PORT': 3306,
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mylogin',
-        'HOST': 'db4free.net',
-        'USER': 'mhtuiopac',
-        'PASSWORD': 'hemantsharma',
-        'PORT': 3306,
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd4gpnvgh39b2sc',
+        'HOST': 'ec2-3-226-59-11.compute-1.amazonaws.com',
+        'USER': 'vawoccgowytuza',
+        'PASSWORD': '624a590b5c13bdd49bbd65f96d412c4bede73d02694b4ccb73e9f3d82d33bade',
+        'PORT': 5432,
     }
 }
 
